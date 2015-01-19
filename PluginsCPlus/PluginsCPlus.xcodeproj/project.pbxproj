@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D11DCBF91A3ABC7700B2A886 /* Converter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D11DCBE61A3ABC7700B2A886 /* Converter.cpp */; };
+		D11DCBFA1A3ABC7700B2A886 /* Converter.h in Headers */ = {isa = PBXBuildFile; fileRef = D11DCBE71A3ABC7700B2A886 /* Converter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D11DCBFB1A3ABC7700B2A886 /* CPlusCallbackproxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D11DCBE81A3ABC7700B2A886 /* CPlusCallbackproxy.cpp */; };
+		D11DCBFC1A3ABC7700B2A886 /* CPlusCallbackproxy.h in Headers */ = {isa = PBXBuildFile; fileRef = D11DCBE91A3ABC7700B2A886 /* CPlusCallbackproxy.h */; };
+		D11DCBFD1A3ABC7700B2A886 /* NetDataBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D11DCBEB1A3ABC7700B2A886 /* NetDataBase.cpp */; };
+		D11DCBFE1A3ABC7700B2A886 /* NetDataBase.h in Headers */ = {isa = PBXBuildFile; fileRef = D11DCBEC1A3ABC7700B2A886 /* NetDataBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D11DCBFF1A3ABC7700B2A886 /* IDataWraper.h in Headers */ = {isa = PBXBuildFile; fileRef = D11DCBED1A3ABC7700B2A886 /* IDataWraper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D11DCC001A3ABC7700B2A886 /* NetBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D11DCBEE1A3ABC7700B2A886 /* NetBase.cpp */; };
+		D11DCC011A3ABC7700B2A886 /* NetBase.h in Headers */ = {isa = PBXBuildFile; fileRef = D11DCBEF1A3ABC7700B2A886 /* NetBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D11DCC021A3ABC7700B2A886 /* NetClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D11DCBF01A3ABC7700B2A886 /* NetClient.cpp */; };
+		D11DCC031A3ABC7700B2A886 /* NetClient.h in Headers */ = {isa = PBXBuildFile; fileRef = D11DCBF11A3ABC7700B2A886 /* NetClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D11DCC041A3ABC7700B2A886 /* NetServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D11DCBF21A3ABC7700B2A886 /* NetServer.cpp */; };
+		D11DCC051A3ABC7700B2A886 /* NetServer.h in Headers */ = {isa = PBXBuildFile; fileRef = D11DCBF31A3ABC7700B2A886 /* NetServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D11DCC061A3ABC7700B2A886 /* NetSession.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D11DCBF41A3ABC7700B2A886 /* NetSession.cpp */; };
+		D11DCC071A3ABC7700B2A886 /* NetSession.h in Headers */ = {isa = PBXBuildFile; fileRef = D11DCBF51A3ABC7700B2A886 /* NetSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D11DCC081A3ABC7700B2A886 /* TextStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D11DCBF71A3ABC7700B2A886 /* TextStream.cpp */; };
+		D11DCC091A3ABC7700B2A886 /* TextStream.h in Headers */ = {isa = PBXBuildFile; fileRef = D11DCBF81A3ABC7700B2A886 /* TextStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D11DCBB51A3AB9FA00B2A886 /* libPluginsCPlus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPluginsCPlus.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D11DCBE61A3ABC7700B2A886 /* Converter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Converter.cpp; sourceTree = "<group>"; };
+		D11DCBE71A3ABC7700B2A886 /* Converter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Converter.h; sourceTree = "<group>"; };
+		D11DCBE81A3ABC7700B2A886 /* CPlusCallbackproxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPlusCallbackproxy.cpp; sourceTree = "<group>"; };
+		D11DCBE91A3ABC7700B2A886 /* CPlusCallbackproxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPlusCallbackproxy.h; sourceTree = "<group>"; };
+		D11DCBEB1A3ABC7700B2A886 /* NetDataBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetDataBase.cpp; sourceTree = "<group>"; };
+		D11DCBEC1A3ABC7700B2A886 /* NetDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetDataBase.h; sourceTree = "<group>"; };
+		D11DCBED1A3ABC7700B2A886 /* IDataWraper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDataWraper.h; sourceTree = "<group>"; };
+		D11DCBEE1A3ABC7700B2A886 /* NetBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetBase.cpp; sourceTree = "<group>"; };
+		D11DCBEF1A3ABC7700B2A886 /* NetBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetBase.h; sourceTree = "<group>"; };
+		D11DCBF01A3ABC7700B2A886 /* NetClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetClient.cpp; sourceTree = "<group>"; };
+		D11DCBF11A3ABC7700B2A886 /* NetClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetClient.h; sourceTree = "<group>"; };
+		D11DCBF21A3ABC7700B2A886 /* NetServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetServer.cpp; sourceTree = "<group>"; };
+		D11DCBF31A3ABC7700B2A886 /* NetServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetServer.h; sourceTree = "<group>"; };
+		D11DCBF41A3ABC7700B2A886 /* NetSession.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetSession.cpp; sourceTree = "<group>"; };
+		D11DCBF51A3ABC7700B2A886 /* NetSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetSession.h; sourceTree = "<group>"; };
+		D11DCBF71A3ABC7700B2A886 /* TextStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextStream.cpp; sourceTree = "<group>"; };
+		D11DCBF81A3ABC7700B2A886 /* TextStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextStream.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D11DCBB21A3AB9FA00B2A886 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D11DCBAC1A3AB9FA00B2A886 = {
+			isa = PBXGroup;
+			children = (
+				D11DCBE51A3ABC7700B2A886 /* CSource */,
+				D11DCBB61A3AB9FA00B2A886 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D11DCBB61A3AB9FA00B2A886 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D11DCBB51A3AB9FA00B2A886 /* libPluginsCPlus.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D11DCBE51A3ABC7700B2A886 /* CSource */ = {
+			isa = PBXGroup;
+			children = (
+				D11DCBE61A3ABC7700B2A886 /* Converter.cpp */,
+				D11DCBE71A3ABC7700B2A886 /* Converter.h */,
+				D11DCBE81A3ABC7700B2A886 /* CPlusCallbackproxy.cpp */,
+				D11DCBE91A3ABC7700B2A886 /* CPlusCallbackproxy.h */,
+				D11DCBEA1A3ABC7700B2A886 /* Datas */,
+				D11DCBED1A3ABC7700B2A886 /* IDataWraper.h */,
+				D11DCBEE1A3ABC7700B2A886 /* NetBase.cpp */,
+				D11DCBEF1A3ABC7700B2A886 /* NetBase.h */,
+				D11DCBF01A3ABC7700B2A886 /* NetClient.cpp */,
+				D11DCBF11A3ABC7700B2A886 /* NetClient.h */,
+				D11DCBF21A3ABC7700B2A886 /* NetServer.cpp */,
+				D11DCBF31A3ABC7700B2A886 /* NetServer.h */,
+				D11DCBF41A3ABC7700B2A886 /* NetSession.cpp */,
+				D11DCBF51A3ABC7700B2A886 /* NetSession.h */,
+				D11DCBF61A3ABC7700B2A886 /* TextReader */,
+			);
+			path = CSource;
+			sourceTree = "<group>";
+		};
+		D11DCBEA1A3ABC7700B2A886 /* Datas */ = {
+			isa = PBXGroup;
+			children = (
+				D11DCBEB1A3ABC7700B2A886 /* NetDataBase.cpp */,
+				D11DCBEC1A3ABC7700B2A886 /* NetDataBase.h */,
+			);
+			path = Datas;
+			sourceTree = "<group>";
+		};
+		D11DCBF61A3ABC7700B2A886 /* TextReader */ = {
+			isa = PBXGroup;
+			children = (
+				D11DCBF71A3ABC7700B2A886 /* TextStream.cpp */,
+				D11DCBF81A3ABC7700B2A886 /* TextStream.h */,
+			);
+			path = TextReader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D11DCBB31A3AB9FA00B2A886 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D11DCC091A3ABC7700B2A886 /* TextStream.h in Headers */,
+				D11DCC071A3ABC7700B2A886 /* NetSession.h in Headers */,
+				D11DCBFE1A3ABC7700B2A886 /* NetDataBase.h in Headers */,
+				D11DCC011A3ABC7700B2A886 /* NetBase.h in Headers */,
+				D11DCC051A3ABC7700B2A886 /* NetServer.h in Headers */,
+				D11DCBFA1A3ABC7700B2A886 /* Converter.h in Headers */,
+				D11DCC031A3ABC7700B2A886 /* NetClient.h in Headers */,
+				D11DCBFF1A3ABC7700B2A886 /* IDataWraper.h in Headers */,
+				D11DCBFC1A3ABC7700B2A886 /* CPlusCallbackproxy.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D11DCBB41A3AB9FA00B2A886 /* PluginsCPlus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D11DCBB91A3AB9FA00B2A886 /* Build configuration list for PBXNativeTarget "PluginsCPlus" */;
+			buildPhases = (
+				D11DCBB11A3AB9FA00B2A886 /* Sources */,
+				D11DCBB21A3AB9FA00B2A886 /* Frameworks */,
+				D11DCBB31A3AB9FA00B2A886 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PluginsCPlus;
+			productName = PluginsCPlus;
+			productReference = D11DCBB51A3AB9FA00B2A886 /* libPluginsCPlus.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D11DCBAD1A3AB9FA00B2A886 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = com.enigma;
+				TargetAttributes = {
+					D11DCBB41A3AB9FA00B2A886 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = D11DCBB01A3AB9FA00B2A886 /* Build configuration list for PBXProject "PluginsCPlus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D11DCBAC1A3AB9FA00B2A886;
+			productRefGroup = D11DCBB61A3AB9FA00B2A886 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D11DCBB41A3AB9FA00B2A886 /* PluginsCPlus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D11DCBB11A3AB9FA00B2A886 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D11DCC081A3ABC7700B2A886 /* TextStream.cpp in Sources */,
+				D11DCBF91A3ABC7700B2A886 /* Converter.cpp in Sources */,
+				D11DCC021A3ABC7700B2A886 /* NetClient.cpp in Sources */,
+				D11DCBFD1A3ABC7700B2A886 /* NetDataBase.cpp in Sources */,
+				D11DCC001A3ABC7700B2A886 /* NetBase.cpp in Sources */,
+				D11DCC041A3ABC7700B2A886 /* NetServer.cpp in Sources */,
+				D11DCC061A3ABC7700B2A886 /* NetSession.cpp in Sources */,
+				D11DCBFB1A3ABC7700B2A886 /* CPlusCallbackproxy.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D11DCBB71A3AB9FA00B2A886 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		D11DCBB81A3AB9FA00B2A886 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+		D11DCBBA1A3AB9FA00B2A886 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		D11DCBBB1A3AB9FA00B2A886 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D11DCBB01A3AB9FA00B2A886 /* Build configuration list for PBXProject "PluginsCPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D11DCBB71A3AB9FA00B2A886 /* Debug */,
+				D11DCBB81A3AB9FA00B2A886 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D11DCBB91A3AB9FA00B2A886 /* Build configuration list for PBXNativeTarget "PluginsCPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D11DCBBA1A3AB9FA00B2A886 /* Debug */,
+				D11DCBBB1A3AB9FA00B2A886 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D11DCBAD1A3AB9FA00B2A886 /* Project object */;
+}
