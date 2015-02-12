@@ -10,5 +10,19 @@
 #define __PluginsCPlus__CustomerArrary__
 
 #include <stdio.h>
+template<class T>
+class CustomerArray
+{
+public:
+    int count;
+    
+public:
+    CustomerArray(int capacity);
+    ~CustomerArray();
+    T operator[](int index);
+    
+private:
+    T *t;
+};
 
 #endif /* defined(__PluginsCPlus__CustomerArrary__) */

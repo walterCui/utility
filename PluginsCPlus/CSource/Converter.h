@@ -24,6 +24,7 @@ public:
     static int toBytes(Byte *bytes, int start, unsigned long long value);
     static int toBytes(Byte *bytes, int start, char *string);
     static int toBytes(Byte *bytes, int start, float value);
+    static int toBytes(Byte *bytes, int start, Byte *value, int len);
     
     static char getChar(Byte *bytes, int &start);
     static short getShort(Byte *bytes, int &start);
@@ -33,6 +34,7 @@ public:
     static unsigned long long getUInt64(Byte *bytes, int &start);
     static char* getString(Byte *bytes, int &start);
     static float getFloat(Byte *bytes, int &start);
+    static Byte* getByteArray(Byte *bytes, int &start);
 };
 #undef Byte
 

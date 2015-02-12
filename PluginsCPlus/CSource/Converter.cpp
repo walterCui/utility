@@ -60,10 +60,13 @@ int Converter::toBytes(Byte *bytes, int start, unsigned long long value)
 
 int Converter::toBytes(Byte *bytes, int start, char *string)
 {
-    short len = strlen(string);
+    short len = string == nullptr ? 0 : strlen(string);
     start += toBytes(bytes, start, len);
-    Byte *ptr = bytes + start;
-    memcpy(ptr, string, len);
+    if(len > 0)
+    {
+        Byte *ptr = bytes + start;
+        memcpy(ptr, string, len);
+    }
     return len+2;
 }
 
@@ -74,6 +77,15 @@ int Converter::toBytes(Byte *bytes, int start, float value)
         bytes[i+start] = ptr[i];
     start += 4;
     return  sizeof(float);
+}
+
+int Converter::toBytes(unsigned char *bytes, int start, Byte *value, int len)
+{
+    start += toBytes(bytes, start, (short)len);
+    for (int i = 0; i < len; i++) {
+        bytes[i+start] = value[i];
+    }
+    return len + 2;
 }
 //===================//
 
@@ -133,6 +145,7 @@ char* Converter::getString(Byte *bytes, int &start)
     Byte *ptr = bytes + start;
     memcpy(temp, ptr, len);
     temp[len] = 0;
+    start += len;
     return  temp;
 }
 
@@ -146,5 +159,15 @@ float Converter::getFloat(Byte *bytes, int &start)
     return  temp;
 }
 
-
+Byte *Converter::getByteArray(Byte *bytes, int &start)
+{
+    short len = getShort(bytes, start);
+    Byte * ret = new Byte[len];
+    for(int i = 0; i < len; i++)
+    {
+        ret[i] = bytes[start];
+        start += 1;
+    }
+    return  ret;
+}
 #undef Byte

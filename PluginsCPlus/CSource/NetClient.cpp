@@ -91,7 +91,7 @@ bool NetClient::connect(char *ip, int port)
     }
     
     fcntl(socketFileDescriptor, F_SETFL, oldFL);
-    return  error != NULL;
+    return  error == NULL;
 }
 
 void NetClient::HandleData(Byte *data)

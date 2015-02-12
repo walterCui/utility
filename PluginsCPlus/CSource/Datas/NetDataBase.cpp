@@ -11,7 +11,7 @@
 NetDataBase::NetDataBase()
 {
     sourceType = 0;
-    destType = 4;
+    destType = 3;
     msgType = 0;
 }
 
