@@ -50,7 +50,6 @@ bool NetClient::connect(char *ip, int port)
         if(errno != EINPROGRESS)
         {
             error = strerror(errno);
-            return  false;
         }
         else
         {
@@ -58,7 +57,8 @@ bool NetClient::connect(char *ip, int port)
             __DARWIN_FD_ZERO(&fdCnn);
             __DARWIN_FD_SET(socketFileDescriptor,&fdCnn);
             struct timeval timeout;
-            timeout.tv_sec = 2;
+            timeout.tv_sec = 3;
+            timeout.tv_usec = 0;
             if(select(socketFileDescriptor+1, NULL, &fdCnn, NULL, &timeout) > 0)
             {
                 if(__DARWIN_FD_ISSET(socketFileDescriptor, &fdCnn))
@@ -68,8 +68,7 @@ bool NetClient::connect(char *ip, int port)
                     getsockopt(socketFileDescriptor, SOL_SOCKET, SO_ERROR, &errorNum, &len);
                     if(errorNum != 0)
                     {
-                        error = (char*)"connect error";
-                        return false;
+                        error = strerror(errorNum);//(char*)"connect error";
                     }
                     else
                         error = NULL;
@@ -78,13 +77,11 @@ bool NetClient::connect(char *ip, int port)
                 else
                 {
                     error = (char*)"connect error";
-                    return false;
                 }
             }
             else
             {
-                error = (char*)"time out";
-                return false;
+                error = strerror(errno);//(char*)"time out";
             }
 
         }
@@ -94,7 +91,7 @@ bool NetClient::connect(char *ip, int port)
     }
     
     fcntl(socketFileDescriptor, F_SETFL, oldFL);
-    return  true;
+    return  error != NULL;
 }
 
 void NetClient::HandleData(Byte *data)
