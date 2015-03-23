@@ -23,6 +23,17 @@ public:
     virtual int serialization(unsigned char data[]);
     //反序列化.
     virtual int deserialization(unsigned char data[], int offset);
+    
+    virtual int getDataSize()
+    {
+        return dataSize;
+    }
+    
+    virtual void setDataSize(int size)
+    {
+        dataSize = size;
+    }
+    
 public:
     short ReturnCode;
 protected:
@@ -31,5 +42,6 @@ protected:
     unsigned char sourceType;
     unsigned char destType;
     int destId;
+    int dataSize;
 };
 #endif /* defined(__EPet__NetDataBase__) */

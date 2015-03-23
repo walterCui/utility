@@ -20,6 +20,10 @@ public:
     virtual int serialization(Byte data[]) = 0;
     //反序列化.
     virtual int deserialization(Byte data[], int offset) = 0;
+    
+    virtual int getDataSize() = 0;
+    
+    virtual void setDataSize(int size) = 0;
 };
 
 #undef Byte

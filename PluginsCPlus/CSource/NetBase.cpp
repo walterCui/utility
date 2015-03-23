@@ -93,11 +93,23 @@ void NetBase::update()
     for(int i = 0, max  = swapeBuff->size(); i < max; i++)
     {
         dateWraper = swapeBuff->front();
+        dateWraper->setDataSize(BUFFMAXSIZE);
         dataSize = dateWraper->serialization(data);
         if(dataSize > 0)
         {
-            Converter::toBytes(data, 0, dataSize);
-            ptr = data;
+            
+            if(dataSize > BUFFMAXSIZE)
+            {
+                byteRef = new Byte[dataSize];
+                dateWraper->setDataSize(dataSize);
+                dataSize = dateWraper->serialization(byteRef);
+            }
+            else
+                byteRef = data;
+            
+            Converter::toBytes(byteRef, 0, dataSize);
+            
+            ptr = byteRef;
             while (true) {
                 wtRdSize = write(socketFileDescriptor, ptr, dataSize);
                 if(wtRdSize <= 0)
@@ -118,6 +130,10 @@ void NetBase::update()
                 }
             }
             
+            if(dataSize > BUFFMAXSIZE)
+            {
+                delete [] byteRef;
+            }
         }
         swapeBuff->pop();
     }

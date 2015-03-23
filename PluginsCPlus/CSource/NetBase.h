@@ -58,6 +58,7 @@ private:
     int wtRdSize;//用与记录读写socket时的数据长度.
     struct timeval timeout;
     fd_set fdset;
+    Byte* byteRef;
     
     //用于缓存都到的数据是用到的.
     struct ByteArray_t
